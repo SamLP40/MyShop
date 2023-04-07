@@ -1,76 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyShop</title>
-    <link rel="stylesheet" href="myshop.css"/>
-</head>
-<body>
+    <link rel="stylesheet" href="myshop.css" />
     <!--intégration du script JS-->
-    <script src="myshop.js"></script>
+</head>
 
-    <!--Navigation (page d'accueil, page pour les catégories, barre de navigation en noir)-->
+<body>
+    <!-- Navigation (page d'accueil, page pour les catégories, barre de navigation en noir)
     <nav>
         <ul class="menu">Ma Boutique en Ligne</ul>
         <ul class="menu">Home</ul>
-    </nav>
+    </nav> -->
 
-<!--Bloc contenant les catégories, une catégorie d'articles s'affiche en fonction du choix de l'utilisateur-->
-<div class="container"><div class="category_title"><h3>Liste des catégories</h3></div>
+    <!--Bloc contenant les catégories, une catégorie d'articles s'affiche en fonction du choix de l'utilisateur-->
+    <!-- <div class="container"><div class="category_title"><h3>Liste des catégories</h3></div>
 
-<div class="border_category">
-    <ul class="category">All</ul>
-    <ul class="category">Smartphone</ul>
-    <ul class="category">Tablet</ul>
-    <ul class ="category">PC</ul>
+    <div class="border_category">
+    <ul class="category"><button class="readAll" onclick='populateTableList()'>All</button></ul>
+    <ul class="category"><button class="smartphone" onclick='displaySmartphone()'>Smartphone</button></ul>
+    <ul class="category"><button class="tablet" onclick='displayTablet()'>Tablet</button></ul>
+    <ul class ="category"><button class="PC" onclick='displayPc()'>PC</button></ul>
+</div> -->
+    <!--Liste des articles en stock-->
+    <!-- <input id="testButton" type="button" value="Generate a table"> -->
+    <div>
+        <table>
+            <!-- <caption>
+            <h3>Liste des articles en stock</h3>
+        </caption> -->
+            <thead>
+                <tr>
+                    <th scope="row">ID</th>
+                    <th scope="row">NAME</th>
+                    <th scope="row">BRAND</th>
+                    <th scope="row">PRICE</th>
+                    <th scope="row">QUANTITY</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--    Ajout dynamique des lignes correspondant à nos articles    -->
+         
+                
+            </tbody>
+        </table>
+    </div>
+    <!--Contenu du panier-->
+    <!-- <div class="cart"></div>
+Formulaire à remplir pour passer commande-->
+    <!--- <div class="order"></div>
 </div>
-<!--Liste des articles en stock-->
-<div class="stock"><h3>Liste des articles en stock</h3></div>
-
-<table>
-    <caption>Liste des articles en stock</caption>
-    <thead>
-        <th scope="row">ID</th>
-        <th scope="row">NAME</th>
-        <th scope="row">BRAND</th>
-        <th scope="row">PRICE</th>
-        <th scope="row">QUANTITY</th>
-    </thead>
-    <tbody>
-        <tr>
-        <th scope="col">
-            <td>1</td>
-            <td>S8</td>
-            <td>test padding auto vers la droite</td>
-        </th>
-        </tr>
-        <tr>
-            <th scope="col">
-                <td>2</td>
-                <td>S9</td>
-            </th>
-        </tr>
-
-        <script>
-
-        </script>
-    </tbody>
-</table>
-<td><script>
-    const articles = [id, "NAME", "BRAND", price, "QUANTITY"];
-    const map = articles.map()
-    
-</script></td>
-<div class="stock_list"><ul class="stock_title">ID NAME BRAND PRICE QUANTITY</ul>
-</div>
-   
-<!--Contenu du panier-->
-<div class="cart"></div>
-<!--Formulaire à remplir pour passer commande-->
-<div class="order"></div>
-</div>
-</div>
+</div> -->
+    <script src="myshop.js"></script>
 </body>
+
 </html>

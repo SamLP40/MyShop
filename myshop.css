@@ -74,7 +74,41 @@ margin-top:10px;
 .stock_title {
 
 }
-th, caption {
+
+table {
+    table-layout:fixed;
+    width:100%;
+    border-collapse:collapse;
+    border:1px solid #2a4cea;
+}
+caption {
+    background-color:#2a4cea;
+    color:white;
+    text-align:left;
+}
+th, td, caption {
     padding-right:auto;
     font-family: arial;
+}
+tbody td {
+    text-align:center;
+}
+
+th {
+    letter-spacing:1px;
+}
+thead {
+    border-bottom:1px solid;
+}
+tbody tr:nth-child(odd) {
+background-color:#ededed;
+}
+button {
+    background:white;
+    border:none;
+}
+button:hover {
+    background:#2a4cea;
+    color:white;
+    cursor:pointer;
 }
