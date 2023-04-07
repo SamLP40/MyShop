@@ -13,10 +13,14 @@ class Article {
         this.quantity = quantity
     }
 }
+// Liste des catégories d'articles à mapper puis faire intéragir avec l'utilisateur
 // let categoryList = document.querySelector("ul");
 
 // let category = [... new Set(articlesList.map(article => article.category))]
 
+// for(categoryList of category) {
+
+// }
 function displayArticles() {
 
     let articlesList = [];

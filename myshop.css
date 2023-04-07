@@ -84,22 +84,37 @@ table {
 caption {
     background-color:#2a4cea;
     color:white;
-    text-align:left;
+    text-align:center;
+    align-items:center;
+    box-shadow: inset;
+    border-radius:20px 20px 20px 20px;
+    width:550px;
+    
 }
 th, td, caption {
     padding-right:auto;
     font-family: arial;
 }
+thead {
+    background-color:#d8e3ff;
+}
 tbody td {
     text-align:center;
+    color:gray;
+}
+tbody {
+    overflow: hidden;
 }
 
 th {
     letter-spacing:1px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
 }
 thead {
     border-bottom:1px solid;
 }
+
 tbody tr:nth-child(odd) {
 background-color:#ededed;
 }
